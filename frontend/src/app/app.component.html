@@ -1,0 +1,52 @@
+<h1>Warehouse</h1>
+<form #warehouseForm ="ngForm" class="warehouse-form" class = "content-box">
+    <div>
+        <p>Register Warehouse:</p>
+    </div>
+    <div class = "form-field">
+        <label for="id"> Id: </label>
+        <input name = "id" type="text" [(ngModel)] = "formData.id" required>
+    </div>
+    <div class = "form-field">
+        <label>Adress:</label>
+    <input name = "adress" type = "text" [(ngModel)] = "formData.address" required>
+    </div>
+    <div class = "form-field">
+        <label>Plotas:</label>
+        <input name = "plotas" type = "text" [(ngModel)] = "formData.area" required>
+    </div>
+    <button pButton (click)="Submit()" label = "Submit" [disabled]="!warehouseForm.form.valid"></button>
+</form>
+
+<p>test</p>
+<button pButton (click)="getById(id.toString())" label="Get by Id"></button>
+<p-inputNumber inputId="Id" [(ngModel)] = "id"></p-inputNumber>
+<p-table *ngIf ="obs$ | async as val; else noData" 
+    [value] = "[val]">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Address</th>
+            <th>Area</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-warehouse>
+        <tr>
+            <td>{{warehouse.id}}</td>
+            <td>{{warehouse.address}}</td>
+            <td>{{warehouse.area}}</td>
+        </tr>
+    </ng-template>
+
+</p-table> 
+<ng-template #noData>
+    <p-table>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Address</th>
+            <th>Area</th>
+        </tr>
+    </ng-template>
+    </p-table>
+</ng-template>

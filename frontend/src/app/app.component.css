@@ -1,0 +1,13 @@
+.form-field{
+    display: grid;
+    margin: 10px;
+    gap: 10px;
+}
+
+.warehouse-form{
+    width: 40%;
+}
+
+.content-box{
+    margin: 10px;
+}
