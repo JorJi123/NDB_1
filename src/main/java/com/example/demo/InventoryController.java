@@ -23,4 +23,9 @@ public class InventoryController {
         System.out.println(id);
         return inventoryService.addInventoryToWarehouse(id, inventory);
     }
+
+    @DeleteMapping("/warehouse/{wId}/inventory/{iId}")
+    public long deleteInventory(@PathVariable("wId") String warehouseId, @PathVariable("iId") String inventoryId){
+       return inventoryService.deleteInventory(warehouseId, inventoryId);
+    }
 }

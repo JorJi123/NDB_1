@@ -37,4 +37,11 @@ public class InventoryService {
         jedis.sadd(warehouseInventorySetKey, saveInventory.getId());
         return saveInventory;
     }
+
+    public long deleteInventory(String warehouseId, String inventoryId){
+        String warehouseInventorySetKey = "warehouse:" + warehouseId + ":inventory";
+        System.out.println(warehouseInventorySetKey);
+        long smt = jedis.srem(warehouseInventorySetKey, inventoryId);
+        return smt;
+    }
 }
