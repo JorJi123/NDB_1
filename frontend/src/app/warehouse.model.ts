@@ -1,5 +1,5 @@
 export interface Warehouse{
 id:string;
-address:string;
-area:string;
+adresas:string;
+plotasM2:string;
 }

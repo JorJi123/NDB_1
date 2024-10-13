@@ -1,52 +1,59 @@
-<h1>Warehouse</h1>
-<form #warehouseForm ="ngForm" class="warehouse-form" class = "content-box">
-    <div>
-        <p>Register Warehouse:</p>
+<h1 style="text-align: center; padding: 10px;">Warehouse</h1>
+<div class = "warehouse">
+    <div class = "register">
+        <form #warehouseForm ="ngForm" class="warehouse-form" class = "content-box">
+            <div>
+                <h2>Register Warehouse:</h2>
+            </div>
+            <div class = "form-field">
+                <label for="id"> Id: </label>
+                <input name = "id" type="text" [(ngModel)] = "formData.id" required>
+            </div>
+            <div class = "form-field">
+                <label>Adresas:</label>
+            <input name = "adress" type = "text" [(ngModel)] = "formData.adresas" required>
+            </div>
+            <div class = "form-field">
+                <label>Plotas:</label>
+                <input name = "plotas" type = "number" [(ngModel)] = "formData.plotasM2" required>
+            </div>
+            <button pButton (click)="Submit()" label = "Submit" [disabled]="!warehouseForm.form.valid"></button>
+        </form>
+        <div class = "buttons">
+            <button pButton (click)="getById(id.toString())" label="Get by Id"></button>
+            <button pButton label="Delete warehouse" (click)="onDelete(id.toString())"></button>
+            <input pInputText inputId="Id" [(ngModel)] = "id">
+        </div>
     </div>
-    <div class = "form-field">
-        <label for="id"> Id: </label>
-        <input name = "id" type="text" [(ngModel)] = "formData.id" required>
-    </div>
-    <div class = "form-field">
-        <label>Adress:</label>
-    <input name = "adress" type = "text" [(ngModel)] = "formData.address" required>
-    </div>
-    <div class = "form-field">
-        <label>Plotas:</label>
-        <input name = "plotas" type = "text" [(ngModel)] = "formData.area" required>
-    </div>
-    <button pButton (click)="Submit()" label = "Submit" [disabled]="!warehouseForm.form.valid"></button>
-</form>
+    <div class = "display">
+        <p-table *ngIf ="obs$ | async as val; else noData" 
+            [value] = "[val]">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Id</th>
+                    <th>Adresas</th>
+                    <th>Plotas</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-warehouse>
+                <tr>
+                    <td>{{warehouse.id}}</td>
+                    <td>{{warehouse.adresas}}</td>
+                    <td>{{warehouse.plotasM2}}</td>
+                </tr>
+            </ng-template>
 
-<p>test</p>
-<button pButton (click)="getById(id.toString())" label="Get by Id"></button>
-<input pInputText inputId="Id" [(ngModel)] = "id">
-<p-table *ngIf ="obs$ | async as val; else noData" 
-    [value] = "[val]">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Id</th>
-            <th>Address</th>
-            <th>Area</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-warehouse>
-        <tr>
-            <td>{{warehouse.id}}</td>
-            <td>{{warehouse.address}}</td>
-            <td>{{warehouse.area}}</td>
-        </tr>
-    </ng-template>
-
-</p-table> 
-<ng-template #noData>
-    <p-table>
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Id</th>
-            <th>Address</th>
-            <th>Area</th>
-        </tr>
-    </ng-template>
-    </p-table>
-</ng-template>
+        </p-table> 
+        <ng-template #noData>
+            <p-table>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Id</th>
+                    <th>Adresas</th>
+                    <th>Plotas</th>
+                </tr>
+            </ng-template>
+            </p-table>
+        </ng-template>
+    </div>
+</div>

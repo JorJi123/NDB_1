@@ -21,8 +21,8 @@ import { InputTextModule } from 'primeng/inputtext';
 export class AppComponent{
   formData:Warehouse = {
     id: '',
-    address: '',
-    area: ''
+    adresas: '',
+    plotasM2: ''
   };
   id:number = 0;
  obs$!:Observable<Warehouse[]>;
@@ -37,6 +37,10 @@ Submit(){
 
 getById(id:string){
   this.obs$ = this.appService.getWarehouseById(this.id.toString());
+}
+onDelete(id:string){
+  this.appService.deleteWarehouse(id).subscribe();
+  this.getById(id);
 }
 
   

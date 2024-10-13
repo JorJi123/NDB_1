@@ -1,12 +1,5 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  ObjectUtils,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-PV2SRCRB.js";
-import {
   DOCUMENT,
   NgClass,
   NgIf,
@@ -14,6 +7,13 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-EAFGYYQ3.js";
+import {
+  ObjectUtils,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-PV2SRCRB.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -2106,4 +2106,4 @@ export {
   Button,
   ButtonModule
 };
-//# sourceMappingURL=chunk-APGB67MW.js.map
+//# sourceMappingURL=chunk-2KPN3QYX.js.map

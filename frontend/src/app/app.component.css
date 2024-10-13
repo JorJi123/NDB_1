@@ -11,3 +11,24 @@
 .content-box{
     margin: 10px;
 }
+
+.warehouse{
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.register{
+    width: 50%;
+    display: 1;
+}
+
+.display{
+    width: 50%;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
