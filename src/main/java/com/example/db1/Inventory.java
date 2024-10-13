@@ -1,9 +1,11 @@
 package com.example.db1;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
 @RedisHash("inventory")
 public class Inventory {
+    @Id
     private String id;
     private int amount;
 

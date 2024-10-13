@@ -20,7 +20,7 @@
 
 <p>test</p>
 <button pButton (click)="getById(id.toString())" label="Get by Id"></button>
-<p-inputNumber inputId="Id" [(ngModel)] = "id"></p-inputNumber>
+<input pInputText inputId="Id" [(ngModel)] = "id">
 <p-table *ngIf ="obs$ | async as val; else noData" 
     [value] = "[val]">
     <ng-template pTemplate="header">

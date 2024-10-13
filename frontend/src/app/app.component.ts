@@ -9,12 +9,12 @@ import { app } from '../../server';
 import { Warehouse } from './warehouse.model';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
-import { InputNumberModule } from 'primeng/inputnumber';
+import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AsyncPipe, FormsModule, ButtonModule, TableModule, NgIf, InputNumberModule],
+  imports: [RouterOutlet, AsyncPipe, FormsModule, ButtonModule, TableModule, NgIf, InputTextModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

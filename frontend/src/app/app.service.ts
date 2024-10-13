@@ -9,7 +9,7 @@ export class appService{
     constructor(private http:HttpClient){}
 
     getWarehouse(){
-        return this.http.get<Object>('http://localhost:8080/test');
+        return this.http.get<Object>('http://localhost:8080/warehouse');
     }
 
     postWarehouse(form:Warehouse){
@@ -18,7 +18,7 @@ export class appService{
             body.set('adress', form.address)
             body.set('plotas', form.area)
         const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-        return this.http.post<Warehouse>('http://localhost:8080/warehouse', form);
+        return this.http.put<Warehouse>('http://localhost:8080/warehouse', form);
     }
 
     getWarehouseById(id:string){

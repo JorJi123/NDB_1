@@ -2,7 +2,9 @@ package com.example.db1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 import redis.clients.jedis.Jedis;
 
 import java.util.List;
@@ -22,45 +24,38 @@ public class InventoryService {
         this.jedis = new Jedis(this.env.getProperty("spring.redis.host"), 6379);
     }
 
-    public List<Inventory> getInventories(String warehouseId){
-        String warehouseInventorySetKey = "warehouse:" + warehouseId + ":inventory";
-        Set<String> inventoriesId = jedis.smembers(warehouseInventorySetKey);
-        return inventoriesId.stream().map(inventoryRepository::findById)
-                .filter(Optional::isPresent)         // Filter out absent inventories
-                .map(Optional::get)
-                .collect(Collectors.toList());
+    public Set<String> getInventories(String warehouseId){
+        if(!jedis.sismember("warehouse", warehouseId)) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Sandėlys nurodytu ID nerastas");
+        String warehouseInventorySetKey = "warehouse:" + warehouseId;
+        return jedis.smembers(warehouseId);
     }
 
-    public Inventory addInventoryToWarehouse(String warehouseId,Inventory inventory){
-        Inventory saveInventory = inventoryRepository.save(inventory);
-        String warehouseInventorySetKey = "warehouse:" + warehouseId + ":inventory";
-        jedis.sadd(warehouseInventorySetKey, saveInventory.getId());
-        return saveInventory;
+    public long addInventoryToWarehouse(String warehouseId, Inventory inventory){
+        if(!jedis.sismember("warehouse", warehouseId)) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Sandėlys nurodytu ID nerastas");
+        inventoryRepository.save(inventory);
+        return jedis.sadd(warehouseId, inventory.getId());
     }
 
 
-    public int getInventoryAmount(String whId, String inId){
-        Inventory inventory = inventoryRepository.findById(inId).orElse(null);
-        return inventory.getAmount();
+    public String getInventoryAmount(String whId, String inId){
+        if(!jedis.sismember("warehouse", whId) || !jedis.sismember("inventory", inId) || !jedis.sismember(whId, inId)) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Sandėlys nurodytu ID nerastas");
+        return jedis.hget("inventory:" + inId, "amount");
     }
 
-    public Inventory setInventoryAmount(String whId, String inId, int newAmount){
-        Inventory inventory = inventoryRepository.findById(inId).orElse(null);
-        inventory.setAmount(newAmount);
-        return inventoryRepository.save(inventory);
+    public long setInventoryAmount(String whId, String inId, int newAmount){
+        if(!jedis.sismember("warehouse", whId) || !jedis.sismember("inventory", inId)) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Sandėlys nurodytu ID nerastas");
+        return jedis.hset("inventory:" + inId, "amount", Integer.toString(newAmount));
     }
 
     public long deleteInventory(String whId, String inId){
-            String warehouseInventorySetKey = "warehouse:" + whId + ":inventory";
-            System.out.println(warehouseInventorySetKey);
-            long smt = jedis.srem(warehouseInventorySetKey, inId);
-            return smt;
+        if(!jedis.sismember("warehouse", whId) || !jedis.sismember("inventory", inId)) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Sandėlys nurodytu ID nerastas");
+        inventoryRepository.delete(inventoryRepository.findById(inId).get());
+        return jedis.srem(whId, inId);
     }
 
-    public Inventory addOrLessenInventoryAmount(String inId, int value){
-        Inventory inventory = inventoryRepository.findById(inId).orElse(null);
-        inventory.setAmount((inventory.getAmount() + value));
-        return inventoryRepository.save(inventory);
+    public long addOrLessenInventoryAmount(String whId, String inId, int value){
+        if(!jedis.sismember("warehouse", whId) || !jedis.sismember("inventory", inId)) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Sandėlys nurodytu ID nerastas");
+        return jedis.hincrBy("inventory:" + inId, "amount", value);
     }
 
 }

@@ -1,100 +1,100 @@
 {
-  "hash": "221093f5",
-  "configHash": "927b885b",
+  "hash": "1a865b6e",
+  "configHash": "df2c97b0",
   "lockfileHash": "f2612582",
-  "browserHash": "713a848a",
+  "browserHash": "9f3248f1",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "ff265aa5",
+      "fileHash": "4adb2487",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "7a702ba8",
+      "fileHash": "e0fe4621",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "6ea7d240",
+      "fileHash": "be73be23",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "7b2b9fc3",
+      "fileHash": "cdfe14c9",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "7a7de275",
+      "fileHash": "abf9a65f",
       "needsInterop": false
     },
     "@angular/platform-server": {
       "src": "../../../../../../node_modules/@angular/platform-server/fesm2022/platform-server.mjs",
       "file": "@angular_platform-server.js",
-      "fileHash": "914896d9",
+      "fileHash": "999db836",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "3907d52e",
+      "fileHash": "3e2f7e18",
       "needsInterop": false
     },
     "primeng/api": {
       "src": "../../../../../../node_modules/primeng/fesm2022/primeng-api.mjs",
       "file": "primeng_api.js",
-      "fileHash": "ae726dcf",
+      "fileHash": "0087f067",
       "needsInterop": false
     },
     "primeng/button": {
       "src": "../../../../../../node_modules/primeng/fesm2022/primeng-button.mjs",
       "file": "primeng_button.js",
-      "fileHash": "36ba07fe",
+      "fileHash": "8e9911cc",
       "needsInterop": false
     },
-    "primeng/inputnumber": {
-      "src": "../../../../../../node_modules/primeng/fesm2022/primeng-inputnumber.mjs",
-      "file": "primeng_inputnumber.js",
-      "fileHash": "5ff31b88",
+    "primeng/inputtext": {
+      "src": "../../../../../../node_modules/primeng/fesm2022/primeng-inputtext.mjs",
+      "file": "primeng_inputtext.js",
+      "fileHash": "d9bcaed7",
       "needsInterop": false
     },
     "primeng/table": {
       "src": "../../../../../../node_modules/primeng/fesm2022/primeng-table.mjs",
       "file": "primeng_table.js",
-      "fileHash": "ade0cc1f",
+      "fileHash": "759fcb66",
       "needsInterop": false
     }
   },
   "chunks": {
-    "xhr2-ISERFGGE": {
-      "file": "xhr2-ISERFGGE.js"
-    },
-    "chunk-N3I4OYPJ": {
-      "file": "chunk-N3I4OYPJ.js"
-    },
-    "chunk-VFG6KK4A": {
-      "file": "chunk-VFG6KK4A.js"
-    },
-    "chunk-APGB67MW": {
-      "file": "chunk-APGB67MW.js"
-    },
-    "chunk-PV2SRCRB": {
-      "file": "chunk-PV2SRCRB.js"
-    },
     "chunk-SCXZ7KVA": {
       "file": "chunk-SCXZ7KVA.js"
+    },
+    "xhr2-ISERFGGE": {
+      "file": "xhr2-ISERFGGE.js"
     },
     "chunk-PBSPOI3C": {
       "file": "chunk-PBSPOI3C.js"
     },
     "chunk-MJCIUX4X": {
       "file": "chunk-MJCIUX4X.js"
+    },
+    "chunk-APGB67MW": {
+      "file": "chunk-APGB67MW.js"
+    },
+    "chunk-XRF7HEHH": {
+      "file": "chunk-XRF7HEHH.js"
+    },
+    "chunk-VFG6KK4A": {
+      "file": "chunk-VFG6KK4A.js"
+    },
+    "chunk-PV2SRCRB": {
+      "file": "chunk-PV2SRCRB.js"
     },
     "chunk-EAFGYYQ3": {
       "file": "chunk-EAFGYYQ3.js"
