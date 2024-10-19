@@ -1,6 +1,8 @@
 package Eshop.demo.product;
 
+import Eshop.demo.client.ClientService;
 import Eshop.demo.order.ItemDTO;
+import Eshop.demo.order.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +15,10 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private ProductService productService;
+    @Autowired
+    private ClientService clientService;
+    @Autowired
+    private OrderService orderService;
 
     @PutMapping("/products")
     public ResponseEntity saveProduct(@RequestBody Product product){
@@ -32,7 +38,12 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 
-
+    @PutMapping("/cleanup")
+    public void cleanup(){
+        productService.cleanup();
+        clientService.cleanup();
+        orderService.cleanup();
+    }
 
 
 }

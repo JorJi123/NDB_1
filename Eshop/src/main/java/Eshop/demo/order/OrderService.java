@@ -27,6 +27,12 @@ public class OrderService {
        return orderRepository.findByClientId(clientId);
     }
 
+    public Long getTotalOrderCount(){
+        return orderRepository.count();
+    }
+    public void cleanup(){
+        orderRepository.deleteAll();
+    }
     public List<ItemDTO> getTopProducts(){
         Aggregation aggregation = Aggregation.newAggregation(
                 Aggregation.unwind("items"),

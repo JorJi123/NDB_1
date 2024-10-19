@@ -25,6 +25,8 @@ public class ClientService {
     public void deleteClientById(String id){
         clientRepository.deleteById(id);
     }
-
+    public void cleanup(){
+        clientRepository.deleteAll();
+    }
 }
 
