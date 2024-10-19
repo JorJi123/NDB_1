@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="598b61e8-8132-4499-a5fb-d07b476c5fed" name="Changes" comment="" />
+    <list default="true" id="598b61e8-8132-4499-a5fb-d07b476c5fed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,29 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_directory_selection": "C:/Users/Augusto/Desktop/demo/src/main/java/com/example/db1",
-    "last_opened_file_path": "C:/Users/Augusto/Desktop/warehouses",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Augusto/Desktop/warehouses/Eshop/src/main/java/org/example/Main.java",
-    "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Augusto/Desktop/demo/src/main/java/com/example/db1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Augusto/Desktop/warehouses&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Augusto/Desktop/warehouses/Eshop/src/main/java/org/example/Main.java&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fe01ce2a7fbac8fafaed7c982a04e229&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -81,19 +90,6 @@
     <configuration name="tests" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.db1.Db1Application" />
       <module name="demo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="demo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="demo" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,7 +143,8 @@
       <workItem from="1729350372197" duration="9000" />
       <workItem from="1729350417395" duration="24000" />
       <workItem from="1729350504096" duration="2000" />
-      <workItem from="1729350538674" duration="650000" />
+      <workItem from="1729350538674" duration="4085000" />
+      <workItem from="1729354641569" duration="2745000" />
     </task>
     <servers />
   </component>
