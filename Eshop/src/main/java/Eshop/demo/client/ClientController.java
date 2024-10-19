@@ -1,4 +1,4 @@
-package Eshop.demo;
+package Eshop.demo.client;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
