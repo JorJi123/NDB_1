@@ -14,8 +14,8 @@ public class ClientService {
         this.clientRepository = clientRepository;
     }
 
-    public Client saveClient(Client client){
-        return clientRepository.save(client);
+    public void saveClient(Client client){
+        clientRepository.save(client);
     }
 
     public Client getClientById(String id){
