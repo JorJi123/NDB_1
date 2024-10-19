@@ -1,4 +1,4 @@
-package Eshop.demo;
+package Eshop.demo.client;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

@@ -13,11 +13,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-
-				// Prompt user for MongoDB URI
-				Scanner scanner = new Scanner(System.in);
-				System.out.println("mongodb://localhost:27017 ");
-				String uri = scanner.nextLine();
+				String uri = "mongodb://localhost:27017";
 
 				try (MongoClient mongoClient = MongoClients.create(uri)) {
 					MongoDatabase database = mongoClient.getDatabase("Eshop");

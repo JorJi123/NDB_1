@@ -1,4 +1,4 @@
-package Eshop.demo;
+package Eshop.demo.client;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
