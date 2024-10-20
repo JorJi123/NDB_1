@@ -1,13 +1,13 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
+  PrimeNGConfig
+} from "./chunk-SYAXVFYL.js";
+import {
   NgModel
-} from "./chunk-VFG6KK4A.js";
+} from "./chunk-APDK5GVL.js";
 import {
   CommonModule
-} from "./chunk-EAFGYYQ3.js";
-import {
-  PrimeNGConfig
-} from "./chunk-PV2SRCRB.js";
+} from "./chunk-U6Q2UIUH.js";
 import {
   ChangeDetectorRef,
   Directive,
@@ -140,4 +140,4 @@ export {
   InputText,
   InputTextModule
 };
-//# sourceMappingURL=chunk-ZYINGHA5.js.map
+//# sourceMappingURL=chunk-ADVOTHP4.js.map
