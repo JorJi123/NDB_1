@@ -2,6 +2,7 @@ package Eshop.demo.order;
 
 import Eshop.demo.product.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
@@ -36,9 +37,14 @@ public class OrderService {
     public List<ItemDTO> getTopProducts(){
         Aggregation aggregation = Aggregation.newAggregation(
                 Aggregation.unwind("items"),
-                Aggregation.project("items.productId", "items.quantity")
+                Aggregation.group("items.productId").
+                        sum("items.quantity").as("quantity"),
+                Aggregation.project()
+                        .and("_id").as("productId")
+                        .and("quantity").as("quantity"),
+                Aggregation.sort(Sort.by(Sort.Order.desc("quantity")))
         );
         AggregationResults<ItemDTO> results = mongoTemplate.aggregate(aggregation, "orders", ItemDTO.class);
-        return results.getMappedResults();
+        return results.getMappedResults().subList(0,10);
     }
 }
