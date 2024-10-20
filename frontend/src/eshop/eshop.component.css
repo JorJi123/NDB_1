@@ -58,3 +58,51 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none; /* Chrome, Safari, Edge, Opera */
   margin: 0;
 }
+
+.small-button{
+  width: 20px;
+  height: 20px;
+}
+
+.quantity-selector {
+  width: 50px; /* Adjust the width of the container */
+}
+
+.quantity-selector ::ng-deep .p-inputnumber input {
+  width: 100%; /* Ensure the input takes the full width of the container */
+  height: 100%;
+  padding: 1px;
+}
+
+.quantity-selector ::ng-deep .p-inputnumber button{
+  height: 10px;
+  width: 100%;
+   /* Adjust input height */
+}
+
+
+.quantity-selector ::ng-deep .p-inputnumber {
+  width: 50px; /* Adjust button width */
+  height: 100%;
+}
+
+.input-elements{
+  align-items: center;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.left{
+  justify-self: start;
+}
+
+.right{
+  justify-self: end;
+}
+
+::ng-deep p-listbox .p-component .p-listbox-list-wrapper ul  li{
+  padding: 1px;
+}
+

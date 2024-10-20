@@ -3,7 +3,8 @@
     <div class = "registerClient">
         <div class="page-container">
             <div class="registerClient">
-              <form #clientForm="ngForm" class="client-form content-box">
+
+              <form #clientForm="ngForm" (submit)="SubmitClient()" class= "client-form content-box">
                 <div>
                   <h2>Register a client</h2>
                 </div>
@@ -19,9 +20,10 @@
                   <label for="email">Client email:</label>
                   <input name="email" type="text" [(ngModel)]="formData.email" placeholder="Enter client email" required>
                 </div>
-                <button pButton (click)="Submit()" label="Submit" [disabled]="!clientForm.form.valid"></button>
+                <button pButton (click)="SubmitClient()" label="Submit" [disabled]="!clientForm.form.valid"></button>
               </form>
             </div>
+            
             <div class="registerProduct">
 
                 <form #productForm="ngForm" class="product-form content-box">
@@ -37,22 +39,61 @@
                     <input name="name" type="text" [(ngModel)]="formData2.name" placeholder="Enter product name" required>
                   </div>
                   <div class="form-field">
-                    <label for="description">Product description:</label>
-                    <input name="description" type="text" [(ngModel)]="formData2.description" placeholder="Enter product description" required>
+                    <label for="description">Product category:</label>
+                    <input name="description" type="text" [(ngModel)]="formData2.category" placeholder="Enter product category" required>
                   </div>
                   <div class="form-field">
                     <label for="price">Enter product Price:</label>
                     <input name="price" type="number" [(ngModel)]="formData2.price" placeholder="Enter product price" required />
                   </div>
-                  <button pButton (click)="Submit()" label="Submit" [disabled]="!productForm.form.valid"></button>                  
+                  <button pButton (click)="SubmitProduct()" label="Submit" [disabled]="!productForm.form.valid"></button>                  
                 </form>
+
               </div>
+              <div class="product-form content-box">
+                <form #orderForm = "ngForm" >
+                  <div>
+                    <h2>Register an order</h2>
+                  </div>
+                  <div class="form-field">
+                    <label for="clientId">Client id: </label>
+                    <input name="clientId" type="text" [(ngModel)]="formData3.clientId" placeholder="Enter client id" required>
+                  </div>
+                  <!-- <label>Select products:</label> -->
+                </form>
+                <p-listbox
+                [options]="(availableProducts$ | async) ?? [] "
+                optionLabel="name"
+                multiple="true"
+                [(ngModel)] = "selectedProducts"
+                (onChange)="updateDataItems()">
+                <ng-template pTemplate="item" let-product >
+                  <div class = "input-elements">
+                    <div class = "right">
+                      {{product.name}}
+                    </div>
+                  
+                  <div class = "quantity-selector left" (click) = "$event.stopImmediatePropagation()">
+                    <p-inputNumber 
+                      buttonLayout="vertical"
+                      [showButtons]="true"
+                      min="0"
+                      [ngModel]="getProductQuantity(product.id)"
+                      (ngModelChange)="setProductQuantity(product.id, $event)"
+                      decrementButtonClass="p-button-secondary"
+                      incrementButtonClass="p-button-secondary"
+                      incrementButtonIcon="pi pi-plus" 
+                      decrementButtonIcon="pi pi-minus" >
+                    </p-inputNumber>
+                  </div>
+                </div>
+                </ng-template>
+
+              </p-listbox>
+              <button pButton (click)="SubmitOrder()" label="Submit" [disabled]="!orderForm.form.valid || formData3.items.length == 0"></button>
+              </div>   
           </div> 
-          <div class = "register-order">
-
-            <!-- <p-orderlist></p-orderlist> -->
-
-          </div>         
+      
     </div>
 </div>
 
