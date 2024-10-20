@@ -19,10 +19,11 @@
                   <label for="email">Client email:</label>
                   <input name="email" type="text" [(ngModel)]="formData.email" placeholder="Enter client email" required>
                 </div>
-                <button pButton (click)="Submit()" label="Submit" [disabled]="!clientForm.form.valid"></button>
+                <button pButton (click)="SubmitClient()" label="Submit" [disabled]="!clientForm.form.valid"></button>
               </form>
             </div>
             <div class="registerProduct">
+
                 <form #productForm="ngForm" class="product-form content-box">
                   <div>
                     <h2>Register a product</h2>

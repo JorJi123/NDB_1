@@ -1,14 +1,13 @@
-import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
   BaseIcon,
   DomHandler,
   SpinnerIcon
-} from "./chunk-OOKWBORQ.js";
+} from "./chunk-K6NG4EKJ.js";
 import {
   PrimeTemplate,
   SharedModule,
   UniqueComponentId
-} from "./chunk-HPOREDVE.js";
+} from "./chunk-7FP4TMQR.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -18,7 +17,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-U6Q2UIUH.js";
+} from "./chunk-2DDVMYP2.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -34,6 +33,7 @@ import {
   Renderer2,
   ViewChild,
   ViewEncapsulation$1,
+  __spreadValues,
   setClassMetadata,
   ɵɵInheritDefinitionFeature,
   ɵɵNgOnChangesFeature,
@@ -72,10 +72,7 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
-} from "./chunk-YDN5P6SV.js";
-import {
-  __spreadValues
-} from "./chunk-NQ4HTGF6.js";
+} from "./chunk-RXLE57JX.js";
 
 // node_modules/primeng/fesm2022/primeng-icons-search.mjs
 var SearchIcon = class _SearchIcon extends BaseIcon {
@@ -1692,4 +1689,4 @@ export {
   Scroller,
   ScrollerModule
 };
-//# sourceMappingURL=chunk-P2TV2D4E.js.map
+//# sourceMappingURL=chunk-ITRGKEQZ.js.map

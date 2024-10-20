@@ -1,17 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Observable } from 'rxjs';
 import { FormsModule } from '@angular/forms';
-import { AsyncPipe, NgIf } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { app } from '../../server';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { Client } from './client.model';
 import { Product } from './product.model';
 import { ListboxModule } from 'primeng/listbox';
-
+import { EshopService } from './eshop.service'; 
 @Component({
   selector: 'app-eshop',
   standalone: true,
@@ -28,8 +23,11 @@ export class EshopComponent {
    selectedCity1: string="";
    selectedCity2: string="";
    
+
+  constructor(private eshopService:EshopService){}
+
   Submit(){
-    console.log("test")
+    this.eshopService.getAllProducts().subscribe(console.log);
   };
   formData:Client = {
     id: '',
@@ -41,5 +39,10 @@ export class EshopComponent {
     name: '',
     description: '',
     price: 0.0
+  };
+
+  SubmitClient(){
+    this.eshopService.registerClient(this.formData).subscribe();
+    console.log(this.formData);
   };
 }

@@ -2,7 +2,7 @@ import {
   DomHandler,
   Ripple,
   SpinnerIcon
-} from "./chunk-DZH76RCH.js";
+} from "./chunk-K6NG4EKJ.js";
 import {
   ObjectUtils,
   PrimeTemplate,
@@ -1100,4 +1100,4 @@ export {
   Button,
   ButtonModule
 };
-//# sourceMappingURL=chunk-54IYJHA4.js.map
+//# sourceMappingURL=chunk-ILQFL64S.js.map

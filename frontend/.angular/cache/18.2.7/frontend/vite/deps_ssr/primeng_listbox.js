@@ -4,15 +4,12 @@ import {
   Scroller,
   ScrollerModule,
   SearchIcon
-} from "./chunk-P2TV2D4E.js";
+} from "./chunk-I2XPWUSE.js";
 import {
   DomHandler,
   Ripple,
   RippleModule
 } from "./chunk-OOKWBORQ.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-APDK5GVL.js";
 import {
   FilterService,
   Footer,
@@ -23,6 +20,9 @@ import {
   SharedModule,
   UniqueComponentId
 } from "./chunk-HPOREDVE.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-APDK5GVL.js";
 import {
   CommonModule,
   NgClass,
