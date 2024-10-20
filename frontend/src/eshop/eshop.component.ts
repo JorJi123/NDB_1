@@ -10,15 +10,24 @@ import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { Client } from './client.model';
 import { Product } from './product.model';
+import { ListboxModule } from 'primeng/listbox';
 
 @Component({
   selector: 'app-eshop',
   standalone: true,
-  imports: [ButtonModule, TableModule, InputTextModule, FormsModule],
+  imports: [ListboxModule, ButtonModule, TableModule, InputTextModule, FormsModule],
   templateUrl: './eshop.component.html',
   styleUrl: './eshop.component.css'
 })
 export class EshopComponent {
+  cities: {label: string, value: string}[] = [
+    {label: 'Client', value: '/url'},
+    {label: 'Order', value: 'City2'},
+    {label: 'Product', value: 'City3'}
+  ];
+   selectedCity1: string="";
+   selectedCity2: string="";
+   
   Submit(){
     console.log("test")
   };

@@ -1054,8 +1054,10 @@ export {
   FilterService,
   OverlayService,
   PrimeNGConfig,
+  Header,
+  Footer,
   PrimeTemplate,
   SharedModule,
   TranslationKeys
 };
-//# sourceMappingURL=chunk-SYAXVFYL.js.map
+//# sourceMappingURL=chunk-HPOREDVE.js.map

@@ -46,7 +46,46 @@
                   <button pButton (click)="Submit()" label="Submit" [disabled]="!productForm.form.valid"></button>                  
                 </form>
               </div>
-          </div>          
+          </div>
+          
+          <div class="getForms">
+            <div>
+                <h2>Actions:</h2>
+              </div>
+            <div class="content-box">
+
+              <form #getForm="ngForm" class="get-form horizontal-layout">
+                <div class="form-field">
+                  <label for="city1">City 1:</label>
+                  <p-listbox required
+                    [options]="cities" 
+                    [(ngModel)]="selectedCity1" 
+                    name="city1" 
+                    optionLabel="label" 
+                    [style]="{'width':'10rem'}" 
+                    [listStyle]="{'max-height': '220px'}">
+                  </p-listbox>
+                </div>
+                <div class="form-field">
+                  <label for="city2">City 2:</label>
+                  <p-listbox required
+                    [options]="cities" 
+                    [(ngModel)]="selectedCity2" 
+                    name="city2" 
+                    optionLabel="label" 
+                    [style]="{'width':'10rem'}" 
+                    [listStyle]="{'max-height': '220px'}">
+                  </p-listbox >
+                  <div class="form-field2">
+                    <label for="id">Id: </label>
+                    <input name="id" type="text" [(ngModel)]="formData2.id" placeholder="Enter id" required>
+                  </div>
+                </div>
+                <button pButton class="getFormButton" (click)="Submit()" label="Submit action" [disabled]="!getForm.form.valid"></button>
+              </form>
+            </div>
+          </div>
+          
     </div>
 </div>
 

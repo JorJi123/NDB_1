@@ -38,7 +38,5 @@ public class OrderController {
     public List<ClientDTO> getClientByOrderAmount(){
         return orderService.getTopClients();
     }
-
-
-
+    
 }

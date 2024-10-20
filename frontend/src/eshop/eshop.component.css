@@ -1,60 +1,117 @@
-.content-box {
-    border: 1px solid #ccc; /* Gray border */
-    padding: 20px;         /* Inner spacing */
-    margin: 20px auto;     /* Centering the box with margins */
-    border-radius: 5px;    /* Rounded corners */
-    background-color: #f9f9f9; /* Light gray background */
-    max-width: 400px;      /* Max width of the box */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
-  .client-form h2 {
-    margin-bottom: 20px; /* Space below the heading */
-  }
-  
-  .form-field {
-    margin-bottom: 15px; /* Space between form fields */
-  }
-  
-  .form-field label {
-    display: block;      /* Labels as block elements */
-    margin-bottom: 5px;  /* Space below the label */
-  }
-  
-  .form-field input {
-    width: 100%;          /* Full width inputs */
-    padding: 8px;         /* Inner padding for inputs */
-    box-sizing: border-box; /* Ensure padding doesn’t affect width */
-    border: 1px solid #ccc; /* Gray border for inputs */
-    border-radius: 3px;    /* Slightly rounded inputs */
-  }
-  
-  button {
-    width: 100%;         /* Full width button */
-    padding: 10px;       /* Padding for the button */
-    background-color: #007bff; /* Blue background */
-    color: white;        /* White text */
-    border: none;        /* No border */
-    border-radius: 5px;  /* Rounded corners */
-    cursor: pointer;     /* Pointer cursor on hover */
-  }
-  
-  button[disabled] {
-    background-color: #aaa; /* Gray background for disabled button */
-  }
-  .page-container {
+.page-container {
     display: flex;
-    justify-content: flex-start; /* Align items to the start (left side) */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: flex-start; /* Align items at the start (top) */
+    gap: 2rem; /* Space between the forms */
     padding: 20px;
+  }
+
+  .client-form, .product-form {
+    width: 100%; /* Ensure forms take up full width of their container */
+    max-width: 400px; /* Limit the width */
   }
   
   .content-box {
-    flex: 1; /* Allows the box to grow as needed */
-    max-width: 400px; /* Optional: limit the width */
-  }  
-
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure boxes have equal width */
+    max-width: 1080px; /* Optional: limit the width */
+  }
+  
+  .client-form, .product-form {
+    width: 100%; /* Ensure forms take up full width of their container */
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[disabled] {
+    background-color: #aaa;
+  }
+  
   input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none; /* Chrome, Safari, Edge, Opera */
   margin: 0;
+}
+
+.flex-container {
+    display: flex;         /* Use flexbox layout */
+    gap: 1rem;             /* Space between items */
+    flex-wrap: wrap;       /* Wrap items to the next line if necessary */
+  }
+  
+/* Ensure form fields are properly aligned horizontally */
+.horizontal-actions {
+    display: flex;
+    flex-direction: column; /* Align title on top */
+  }
+  
+  .horizontal-layout {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Align items horizontally */
+    gap: 1rem; /* Space between items */
+  }
+  
+  
+  button {
+    align-self: center; /* Align button in the center */
+    width: auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[disabled] {
+    background-color: #aaa;
+  }
+  .getForms {
+    padding-top: 10rem;
+    align-self: flex-end; /* Push the Actions box to the bottom */
+    width: 100%;
+  }
+  .getFormButton {
+    margin-bottom: 1rem;
+    align-self: end;
+  }
+  .form-field2 {
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .form-field2 label {
+    margin-bottom: 5px; /* Space between label and input */
+  }
+  
+
+.form-field2 input {
+  width: 100%;          /* Full width of the container */
+  max-width: 300px;     /* Maximum width */
+  padding: 10px;        /* Inner padding */
+  height: 40px;         /* Height of the input */
+  margin: 0;
+  width: 10rem;        /* Margin around the input */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 5px;   /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in width/height */
 }
