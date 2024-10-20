@@ -1,5 +1,7 @@
 package Eshop.demo.order;
 
+import Eshop.demo.client.Client;
+import Eshop.demo.client.ClientDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,8 +16,8 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
     @PutMapping("/orders")
-    public void createOrder(@RequestBody Order order){
-        orderService.saveOrder(order);
+    public Order createOrder(@RequestBody Order order){
+        return orderService.saveOrder(order);
     }
     @GetMapping("/clients/{clientId}/orders")
     public ArrayList<Order> getClientOrders(@PathVariable String clientId){
@@ -30,6 +32,11 @@ public class OrderController {
     @GetMapping("/statistics/orders/totalValue")
     public ResponseEntity getTotalOrderCount(){
         return new ResponseEntity<>("TotalValue: " + orderService.getTotalOrderCount(), HttpStatus.OK);
+    }
+
+    @GetMapping("/statistics/top/clients")
+    public List<ClientDTO> getClientByOrderAmount(){
+        return orderService.getTopClients();
     }
 
 

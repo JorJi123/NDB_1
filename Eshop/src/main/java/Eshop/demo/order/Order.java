@@ -9,10 +9,9 @@ import java.util.ArrayList;
 
 @Setter
 @Getter
-
 @Document(collection = "orders")
 public class Order {
-    String clientId;
+    private String clientId;
 
-    ArrayList<ItemDTO> items;
+    private ArrayList<ItemDTO> items;
 }
