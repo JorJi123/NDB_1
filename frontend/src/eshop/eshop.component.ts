@@ -66,6 +66,8 @@ export class EshopComponent {
   }
   SubmitProduct(){
     this.eshopService.registerProduct(this.formData2).subscribe();
+    this.availableProducts$ = this.eshopService.getAllProducts();
+    this.availableProducts$.subscribe();
   }
   SubmitOrder(){
     this.eshopService.registerOrder(this.formData3).subscribe();
@@ -221,6 +223,10 @@ export class EshopComponent {
   dropDatabase(){
     this.eshopService.deleteAll().subscribe();
     this.dataObservable = of(null);
+    this.resetBody();
+    this.resetColumns();
+    this.availableProducts$ = this.eshopService.getAllProducts();
+    this.availableProducts$.subscribe();
   }
 
 }
