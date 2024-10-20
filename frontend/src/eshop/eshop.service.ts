@@ -27,4 +27,30 @@ export class EshopService{
     registerProduct(form:Product){
         return this.http.put('products', form);
     }
+    
+    getClientDetails(id:string){
+        return this.http.get(`clients/${id}`);
+    }
+    deleteClient(id:string){
+        return this.http.delete(`clients/${id}`)
+    }
+    getProductDetails(productId:string){
+        return this.http.get(`products/${productId}`)
+    }
+    deleteProduct(productId:string){
+        return this.http.delete(`products/${productId}`)
+    }
+    getClientOrders(clientId:string){
+        return this.http.get(`clients/${clientId}/orders`)
+    }
+
+    getTopClients(){
+        return this.http.get('statistics/top/clients')
+    }
+    getTopProducts(){
+        return this.http.get('statistics/top/products')
+    }
+    deleteAll(){
+        return this.http.delete('cleanup');
+    }
 }

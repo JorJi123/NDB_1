@@ -14,5 +14,13 @@
     "/clients": {
       "target": "http://localhost:8080/",
       "secure": false
+    },
+    "/statistics": {
+      "target": "http://localhost:8080/",
+      "secure": false
+    },
+    "/cleanup": {
+      "target": "http://localhost:8080/",
+      "secure": false
     }
   }

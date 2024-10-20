@@ -7,10 +7,11 @@ import { Client } from './client.model';
 import { Product } from './product.model';
 import { EshopService } from './eshop.service';
 import { ListboxModule } from 'primeng/listbox';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 import { Order } from './order.model';
 import { InputNumberModule } from 'primeng/inputnumber';
+import { NgFor } from '@angular/common';
 
 
 
@@ -23,25 +24,27 @@ import { InputNumberModule } from 'primeng/inputnumber';
             FormsModule,
             ListboxModule,
             AsyncPipe,
-            InputNumberModule
+            InputNumberModule,
+            NgFor
   ],
   templateUrl: './eshop.component.html',
   styleUrl: './eshop.component.css'
 })
 export class EshopComponent {
+
   availableProducts$:Observable<Product[]>;
   selectedProducts:Product[] = [];
+
+  dataObservable:Observable<any> = of(null);
+  dataColumns:any[] = [];
+  dataBody:any[] =[];
+  orderObservable:Observable<any> = of(null);
 
   constructor(private eshopService:EshopService){
     this.availableProducts$ = eshopService.getAllProducts();
   }
 
   
-
-  Submit(){
-    //this.eshopService.getAllProducts().subscribe(console.log);
-    console.log(this.formData3);
-  };
   formData:Client = {
     id: "",
     name: "",
@@ -89,5 +92,135 @@ export class EshopComponent {
     console.log(this.formData3);
   }
 
+  getClientDetails(event:any){
+    this.dataObservable = this.eshopService.getClientDetails(event);
+    this.dataObservable.subscribe({
+      next: (value:any) => {
+        console.log(value) ;
+        this.resetBody();
+        this.resetColumns();
+        this.setColumns(value);
+        this.setBody(value);
+      },
+      error: (err:any) => {
+        this.resetBody();
+      }
+    })
+  }
+
+  getProductDetails(event:any){
+    this.dataObservable = this.eshopService.getProductDetails(event);
+    this.dataObservable.subscribe({
+      next: (value:any) => {
+        console.log(value) ;
+        this.resetBody();
+        this.resetColumns();
+        this.setBody(value);
+        this.setColumns(value);
+      },
+      error: (err:any) => {
+        this.resetBody();
+      }
+    })
+  }
+  deleteClient(event:any){
+    this.eshopService.deleteClient(event).subscribe();
+    this.getClientDetails(event);
+  }
+
+  deleteProduct(event:any){
+    this.eshopService.deleteProduct(event).subscribe();
+    this.getProductDetails(event);
+  }
+
+  getClientOrders(event:any){
+   return this.orderObservable = this.eshopService.getClientOrders(event);
+  }
+
+  getTopClients(){
+    this.dataObservable = this.eshopService.getTopClients();
+    this.dataObservable.subscribe({
+      next: (value:any) => {
+        this.resetBody();
+        this.resetColumns();
+        this.setBody(value);
+        this.setColumns(value);
+      },
+      error: (err:any) => {
+        this.resetBody();
+      }
+    })
+  }
+
+  getTopProducts(){
+    this.dataObservable = this.eshopService.getTopProducts();
+    this.dataObservable.subscribe({
+      next: (value:any) => {
+        this.resetBody();
+        this.resetColumns();
+        this.setBody(value);
+        this.setColumns(value);
+      },
+      error: (err:any) => {
+        this.resetBody();
+      }
+    })
+  }
+
+  setColumns(object:any){
+    if(object instanceof Array)this.dataColumns = Object.keys(object[0])
+    else{
+      this.dataColumns = Object.keys(object);
+      console.log(this.dataColumns)
+    }
+
+  }
+
+  setBody(object:any){
+    this.dataBody = this.dataBody.concat(object);
+    console.log(this.dataBody);
+  }
+
+  resetColumns(){
+    this.dataColumns = [];
+  }
+
+  resetBody(){
+    this.dataBody = [];
+  }
+
+  listBoxClick(event:any){
+    this.resetBody();
+    this.resetColumns();
+    this.setColumns(event.value.items)
+    this.setBody(event.value.items)
+  }
+
+  resetButton(){
+    this.resetBody();
+    this.resetColumns();
+  }
+
+  getAll(id:string){
+    this.resetBody();
+    this.resetColumns();
+    this.dataObservable = this.getClientOrders(id);
+    this.dataObservable.subscribe({
+      next: (value:any) => {
+        for(let element in value){
+          this.setColumns(value[element].items);
+          this.setBody(value[element].items);
+        }
+      },
+      error: (err:any) => {
+        this.resetBody();
+      }
+    })
+  }
+
+  dropDatabase(){
+    this.eshopService.deleteAll().subscribe();
+    this.dataObservable = of(null);
+  }
 
 }

@@ -1,5 +1,6 @@
 package Eshop.demo.client;
 
+import Eshop.demo.order.OrderRepository;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,8 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 public class ClientService {
     private final ClientRepository clientRepository;
+    @Autowired
+    private OrderRepository orderRepository;
 
     @Autowired
     ClientService(ClientRepository clientRepository){
@@ -30,7 +33,9 @@ public class ClientService {
 
     public void deleteClientById(String id){
         if(clientRepository.findById(id).isEmpty()) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Client not found");
+        orderRepository.deleteByClientId(id);
         clientRepository.deleteById(id);
+
     }
     public void cleanup(){
         clientRepository.deleteAll();

@@ -8,4 +8,5 @@ import java.util.ArrayList;
 
 public interface OrderRepository extends MongoRepository<Order, String> {
     ArrayList<Order> findByClientId(String clientId);
+    void deleteByClientId(String clientId);
 }

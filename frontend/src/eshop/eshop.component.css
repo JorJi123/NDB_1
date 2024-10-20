@@ -1,10 +1,9 @@
 .content-box {
+    
     border: 1px solid #ccc; /* Gray border */
     padding: 20px;         /* Inner spacing */
-    margin: 20px auto;     /* Centering the box with margins */
     border-radius: 5px;    /* Rounded corners */
     background-color: #f9f9f9; /* Light gray background */
-    max-width: 400px;      /* Max width of the box */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
@@ -44,7 +43,6 @@
   }
   .page-container {
     display: flex;
-    justify-content: flex-start; /* Align items to the start (left side) */
     padding: 20px;
   }
   
@@ -91,6 +89,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: grid; 
   grid-template-columns: 1fr 1fr;
   height: 100%;
+  gap: 20px;
   width: 100%;
 }
 
@@ -106,3 +105,27 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 1px;
 }
 
+.button-block{
+  display: grid; 
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.command-panel{
+  width: auto;
+  padding-right: 10px;
+}
+
+.panel{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.drop-database{
+width: 25%;
+margin-top: 10px;
+}
+
+button{
+  /* background-color: ; */
+}
