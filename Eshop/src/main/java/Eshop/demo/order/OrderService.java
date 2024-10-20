@@ -39,6 +39,6 @@ public class OrderService {
                 Aggregation.sort(Sort.by(Sort.Order.desc("quantity")))
         );
         AggregationResults<ItemDTO> results = mongoTemplate.aggregate(aggregation, "orders", ItemDTO.class);
-        return results.getMappedResults();
+        return results.getMappedResults().subList(0,10);
     }
 }
