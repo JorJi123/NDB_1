@@ -1,0 +1,54 @@
+<h1>Eshop</h1>
+<div class="client">
+    <div class = "registerClient">
+        <div class="page-container">
+            <div class="registerClient">
+              <form #clientForm="ngForm" class="client-form content-box">
+                <div>
+                  <h2>Register a client</h2>
+                </div>
+                <div class="form-field">
+                  <label for="id">Client id: </label>
+                  <input name="id" type="text" [(ngModel)]="formData.id" placeholder="Enter client id" required>
+                </div>
+                <div class="form-field">
+                  <label for="name">Client full name:</label>
+                  <input name="name" type="text" [(ngModel)]="formData.name" placeholder="Enter full name" required>
+                </div>
+                <div class="form-field">
+                  <label for="email">Client email:</label>
+                  <input name="email" type="text" [(ngModel)]="formData.email" placeholder="Enter client email" required>
+                </div>
+                <button pButton (click)="Submit()" label="Submit" [disabled]="!clientForm.form.valid"></button>
+              </form>
+            </div>
+            <div class="registerProduct">
+                <form #productForm="ngForm" class="product-form content-box">
+                  <div>
+                    <h2>Register a product</h2>
+                  </div>
+                  <div class="form-field">
+                    <label for="id">Product id: </label>
+                    <input name="id" type="text" [(ngModel)]="formData2.id" placeholder="Enter product id" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="name">Product name:</label>
+                    <input name="name" type="text" [(ngModel)]="formData2.name" placeholder="Enter product name" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="description">Product description:</label>
+                    <input name="description" type="text" [(ngModel)]="formData2.description" placeholder="Enter product description" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="price">Enter product Price:</label>
+                    <input name="price" type="number" [(ngModel)]="formData2.price" placeholder="Enter product price" required />
+                  </div>
+                  <button pButton (click)="Submit()" label="Submit" [disabled]="!productForm.form.valid"></button>                  
+                </form>
+              </div>
+          </div>          
+    </div>
+</div>
+
+
+

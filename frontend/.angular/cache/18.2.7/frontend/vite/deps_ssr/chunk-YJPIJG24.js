@@ -1,19 +1,19 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
+  ObjectUtils,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-SYAXVFYL.js";
+import {
   DOCUMENT,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-EAFGYYQ3.js";
-import {
-  ObjectUtils,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-PV2SRCRB.js";
+} from "./chunk-U6Q2UIUH.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -2106,4 +2106,4 @@ export {
   Button,
   ButtonModule
 };
-//# sourceMappingURL=chunk-2KPN3QYX.js.map
+//# sourceMappingURL=chunk-YJPIJG24.js.map
