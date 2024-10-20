@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="598b61e8-8132-4499-a5fb-d07b476c5fed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/client/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/client/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/client/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/client/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/order/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/product/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +114,8 @@
     <list>
       <item itemvalue="Application.tests" />
       <item itemvalue="Application.Eshop" />
+      <item itemvalue="Spring Boot.Db1Application" />
+      <item itemvalue="Spring Boot.DemoApplication" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -144,7 +146,8 @@
       <workItem from="1729350417395" duration="24000" />
       <workItem from="1729350504096" duration="2000" />
       <workItem from="1729350538674" duration="4085000" />
-      <workItem from="1729354641569" duration="6590000" />
+      <workItem from="1729354641569" duration="7406000" />
+      <workItem from="1729369433230" duration="2935000" />
     </task>
     <servers />
   </component>

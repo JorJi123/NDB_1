@@ -25,6 +25,9 @@ public class ProductService {
          productRepository.save(product);
     }
 
+    public void cleanup(){
+        productRepository.deleteAll();
+    }
     public List<ProductDTO> getProducts() {
         List<ProductDTO> productDTOList = new ArrayList<>();
         productRepository.findAll().forEach(product -> {
