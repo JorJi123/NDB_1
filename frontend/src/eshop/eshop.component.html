@@ -23,6 +23,7 @@
               </form>
             </div>
             <div class="registerProduct">
+
                 <form #productForm="ngForm" class="product-form content-box">
                   <div>
                     <h2>Register a product</h2>
@@ -46,7 +47,12 @@
                   <button pButton (click)="Submit()" label="Submit" [disabled]="!productForm.form.valid"></button>                  
                 </form>
               </div>
-          </div>          
+          </div> 
+          <div class = "register-order">
+
+            <!-- <p-orderlist></p-orderlist> -->
+
+          </div>         
     </div>
 </div>
 

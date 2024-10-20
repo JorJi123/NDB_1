@@ -2,5 +2,17 @@
     "/test": {
       "target": "http://localhost:8080/test",
       "secure": false
+    },
+    "/orders": {
+      "target": "http://localhost:8080/",
+      "secure": false
+    },
+    "/products": {
+      "target": "http://localhost:8080/",
+      "secure": false
+    },
+    "/clients": {
+      "target": "http://localhost:8080/",
+      "secure": false
     }
   }
