@@ -1,0 +1,227 @@
+.content-box {
+    
+    border: 1px solid #ccc; /* Gray border */
+    padding: 20px;         /* Inner spacing */
+    border-radius: 5px;    /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .client-form h2 {
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .form-field {
+    margin-bottom: 15px; /* Space between form fields */
+  }
+  
+  .form-field label {
+    display: block;      /* Labels as block elements */
+    margin-bottom: 5px;  /* Space below the label */
+  }
+  
+  .form-field input {
+    width: 100%;          /* Full width inputs */
+    padding: 8px;         /* Inner padding for inputs */
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    border: 1px solid #ccc; /* Gray border for inputs */
+    border-radius: 3px;    /* Slightly rounded inputs */
+  }
+  
+  button {
+    width: 100%;         /* Full width button */
+    padding: 10px;       /* Padding for the button */
+    background-color: #007bff; /* Blue background */
+    color: white;        /* White text */
+    border: none;        /* No border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;     /* Pointer cursor on hover */
+  }
+  
+  button[disabled] {
+    background-color: #aaa; /* Gray background for disabled button */
+  }
+  .page-container {
+    display: flex;
+    padding: 20px;
+  }
+
+  .client-form, .product-form {
+    width: 100%; /* Ensure forms take up full width of their container */
+    max-width: 400px; /* Limit the width */
+  }
+  
+  .content-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure boxes have equal width */
+    max-width: 1080px; /* Optional: limit the width */
+  }
+  
+  .client-form, .product-form {
+    width: 100%; /* Ensure forms take up full width of their container */
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[disabled] {
+    background-color: #aaa;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge, Opera */
+  margin: 0;
+}
+
+.flex-container {
+    display: flex;         /* Use flexbox layout */
+    gap: 1rem;             /* Space between items */
+    flex-wrap: wrap;       /* Wrap items to the next line if necessary */
+  }
+  
+/* Ensure form fields are properly aligned horizontally */
+.horizontal-actions {
+    display: flex;
+    flex-direction: column; /* Align title on top */
+  }
+  
+  .horizontal-layout {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Align items horizontally */
+    gap: 1rem; /* Space between items */
+  }
+  
+  
+  button {
+    align-self: center; /* Align button in the center */
+    width: auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[disabled] {
+    background-color: #aaa;
+  }
+  .getForms {
+    padding-top: 10rem;
+    align-self: flex-end; /* Push the Actions box to the bottom */
+    width: 100%;
+  }
+  .getFormButton {
+    margin-bottom: 1rem;
+    align-self: end;
+  }
+  .form-field2 {
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .form-field2 label {
+    margin-bottom: 5px; /* Space between label and input */
+  }
+  
+
+.form-field2 input {
+  width: 100%;          /* Full width of the container */
+  max-width: 300px;     /* Maximum width */
+  padding: 10px;        /* Inner padding */
+  height: 40px;         /* Height of the input */
+  margin: 0;
+  width: 10rem;        /* Margin around the input */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 5px;   /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+.small-button{
+  width: 20px;
+  height: 20px;
+}
+
+.quantity-selector {
+  width: 50px; /* Adjust the width of the container */
+}
+
+.quantity-selector ::ng-deep .p-inputnumber input {
+  width: 100%; /* Ensure the input takes the full width of the container */
+  height: 100%;
+  padding: 1px;
+}
+
+.quantity-selector ::ng-deep .p-inputnumber button{
+  height: 10px;
+  width: 100%;
+   /* Adjust input height */
+}
+
+
+.quantity-selector ::ng-deep .p-inputnumber {
+  width: 50px; /* Adjust button width */
+  height: 100%;
+}
+
+.input-elements{
+  align-items: center;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  gap: 20px;
+  width: 100%;
+}
+
+.left{
+  justify-self: start;
+}
+
+.right{
+  justify-self: end;
+}
+
+::ng-deep p-listbox .p-component .p-listbox-list-wrapper ul  li{
+  padding: 1px;
+}
+
+.button-block{
+  display: grid; 
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.command-panel{
+  width: auto;
+  padding-right: 10px;
+}
+
+.panel{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.drop-database{
+width: 25%;
+margin-top: 10px;
+}
+
+
