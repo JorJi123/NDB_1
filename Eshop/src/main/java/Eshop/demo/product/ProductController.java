@@ -38,7 +38,7 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 
-    @PutMapping("/cleanup")
+    @DeleteMapping("/cleanup")
     public void cleanup(){
         productService.cleanup();
         clientService.cleanup();
