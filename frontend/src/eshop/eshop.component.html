@@ -1,9 +1,9 @@
 <h1>Eshop</h1>
-<div class="client">
-    <div class = "registerClient">
+<div>
         <div class="page-container">
-            <div class="registerClient">
-              <form #clientForm="ngForm" class="client-form content-box">
+            <div class="content-box">
+
+              <form #clientForm="ngForm">
                 <div>
                   <h2>Register a client</h2>
                 </div>
@@ -22,9 +22,10 @@
                 <button pButton (click)="SubmitClient()" label="Submit" [disabled]="!clientForm.form.valid"></button>
               </form>
             </div>
-            <div class="registerProduct">
+            
+            <div class="content-box">
 
-                <form #productForm="ngForm" class="product-form content-box">
+                <form #productForm="ngForm" >
                   <div>
                     <h2>Register a product</h2>
                   </div>
@@ -37,57 +38,126 @@
                     <input name="name" type="text" [(ngModel)]="formData2.name" placeholder="Enter product name" required>
                   </div>
                   <div class="form-field">
-                    <label for="description">Product description:</label>
-                    <input name="description" type="text" [(ngModel)]="formData2.description" placeholder="Enter product description" required>
+                    <label for="description">Product category:</label>
+                    <input name="description" type="text" [(ngModel)]="formData2.category" placeholder="Enter product category" required>
                   </div>
                   <div class="form-field">
                     <label for="price">Enter product Price:</label>
                     <input name="price" type="number" [(ngModel)]="formData2.price" placeholder="Enter product price" required />
                   </div>
-                  <button pButton (click)="Submit()" label="Submit" [disabled]="!productForm.form.valid"></button>                  
+                  <button pButton (click)="SubmitProduct()" label="Submit" [disabled]="!productForm.form.valid"></button>                  
                 </form>
-              </div>
-          </div>
-          
-          <div class="getForms">
-            <div>
-                <h2>Actions:</h2>
-              </div>
-            <div class="content-box">
 
-              <form #getForm="ngForm" class="get-form horizontal-layout">
-                <div class="form-field">
-                  <label for="city1">City 1:</label>
-                  <p-listbox required
-                    [options]="cities" 
-                    [(ngModel)]="selectedCity1" 
-                    name="city1" 
-                    optionLabel="label" 
-                    [style]="{'width':'10rem'}" 
-                    [listStyle]="{'max-height': '220px'}">
-                  </p-listbox>
-                </div>
-                <div class="form-field">
-                  <label for="city2">City 2:</label>
-                  <p-listbox required
-                    [options]="cities" 
-                    [(ngModel)]="selectedCity2" 
-                    name="city2" 
-                    optionLabel="label" 
-                    [style]="{'width':'10rem'}" 
-                    [listStyle]="{'max-height': '220px'}">
-                  </p-listbox >
-                  <div class="form-field2">
-                    <label for="id">Id: </label>
-                    <input name="id" type="text" [(ngModel)]="formData2.id" placeholder="Enter id" required>
+              </div>
+              <div class="content-box">
+                <form #orderForm = "ngForm" >
+                  <div>
+                    <h2>Register an order</h2>
+                  </div>
+                  <div class="form-field">
+                    <label for="clientId">Client id: </label>
+                    <input name="clientId" type="text" [(ngModel)]="formData3.clientId" placeholder="Enter client id" required>
+                  </div>
+                  <!-- <label>Select products:</label> -->
+                </form>
+                <p-listbox
+                [options]="(availableProducts$ | async) ?? [] "
+                optionLabel="name"
+                multiple="true"
+                [(ngModel)] = "selectedProducts"
+                (onChange)="updateDataItems()">
+                <ng-template pTemplate="item" let-product >
+                  <div class = "input-elements">
+                    <div class = "right">
+                      {{product.name}}
+                    </div>
+                  
+                  <div class = "quantity-selector left" (click) = "$event.stopImmediatePropagation()">
+                    <p-inputNumber 
+                      buttonLayout="vertical"
+                      [showButtons]="true"
+                      min="0"
+                      [ngModel]="getProductQuantity(product.id)"
+                      (ngModelChange)="setProductQuantity(product.id, $event)"
+                      decrementButtonClass="p-button-secondary"
+                      incrementButtonClass="p-button-secondary"
+                      incrementButtonIcon="pi pi-plus" 
+                      decrementButtonIcon="pi pi-minus" >
+                    </p-inputNumber>
                   </div>
                 </div>
-                <button pButton class="getFormButton" (click)="Submit()" label="Submit action" [disabled]="!getForm.form.valid"></button>
-              </form>
+                </ng-template>
+
+              </p-listbox>
+              <button [style]="{'margin-top':'10px'}"  pButton (click)="SubmitOrder()" label="Submit" [disabled]="!orderForm.form.valid || formData3.items.length == 0"></button>
+              </div>   
+        </div>
+        <div class = "panel">
+          <div class = "command-panel">
+            <h2>Clients:</h2>
+            <div class = "button-block">
+              <button pButton label="Get Client Details" (click)="getClientDetails(clientValue.value)" severity="info" outlined="true"></button>
+              <input type = "text" #clientValue>
+              <button pButton [outlined]="true" label="Delete Client" (click)="deleteClient(clientValue.value)"></button>
+            </div>
+            <h2>Products:</h2>
+            <div class = "button-block">
+              <button pButton [outlined]="true" label="Get Product Details" (click)="getProductDetails(productValue.value)"></button>
+              <input type = "text" #productValue>
+              <button pButton [outlined]="true" label="Delete Product" (click)="deleteProduct(productValue.value)"></button>
+            </div>
+            <h2>Statistics:</h2>
+            <div class = "button-block">
+              <button pButton [outlined]="true" label="Get Top Clients" (click)="getTopClients()"></button>
+              <button pButton [outlined]="true" label="Get Top Products" (click)="getTopProducts()"></button>
             </div>
           </div>
-          
-    </div>
+          <div class = "object-panel">
+            <p-table [columns]="dataColumns" [value]="dataBody">
+              <ng-template pTemplate="header" let-columns>
+                <tr>
+                  <th></th>
+                  <th *ngFor = "let col of columns">
+                    {{col}}
+                  </th>
+                </tr>
+              </ng-template>
+              <ng-template pTemplate="body" let-rowData let-columns="columns">
+                  <tr>
+                      <th>
+                      </th>
+                      <th *ngFor = "let col of columns">
+                        {{rowData[col]}}
+                      </th>
+                  </tr>
+              </ng-template>
+            </p-table>
+          </div> 
+        </div>
+        <div class = "panel">
+          <div class = "command-panel">
+            <h2>Orders:</h2>
+            <div class = "button-block">
+              <button pButton label="Get Client Orders" (click)="getClientOrders(clientOrderValue.value)"></button>
+              <input type = "text" #clientOrderValue>
+              <button pButton [outlined]="true" label = "Reset" (click)="resetButton()"></button>
+              <button pButton [outlined]="true" label = "Get All" (click)="getAll(clientOrderValue.value)"></button>
+            </div>
+          </div>
+          <div class="object-panel">
+            <h2>Order List:</h2>
+            <p-listbox
+              [options]="orderObservable | async"
+              (onChange)="listBoxClick($event)">
+              <ng-template pTemplate="item" let-item let-i="index">
+                Order: {{i}}
+              </ng-template>
+            </p-listbox>
+          </div>
+        </div>
+        <button class = "drop-database" pButton label="Drop Database..." icon="pi pi-question"  [outlined]="true"iconPos="right"></button>
+
+
 </div>
 
 

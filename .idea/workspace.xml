@@ -5,43 +5,188 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="598b61e8-8132-4499-a5fb-d07b476c5fed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/eshop/eshop.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/.tsbuildinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/_metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-BAOIP7IO.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-KZE4DZCA.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-PF6LNL77.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-PF6LNL77.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_inputnumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_inputtext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_table.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/rxjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_forms.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_platform-browser.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/_metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-2H3L6IVL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-2H3L6IVL.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-NQ4HTGF6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-Q3R2RZWL.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-VZTX2A42.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-XFJRHLHJ.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_api.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_button.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_inputnumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_inputnumber.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_inputtext.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_table.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/rxjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/rxjs.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eshop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/client/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/client/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/main/java/Eshop/demo/order/OrderRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_common_http.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_common_http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_common_http.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_common.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_core.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_forms.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_forms.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_platform-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_platform-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_platform-browser.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_platform-browser.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_router.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/@angular_router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_router.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-2DDVMYP2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-BAOIP7IO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-2DDVMYP2.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-472RHFTU.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-472RHFTU.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-472RHFTU.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-472RHFTU.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-54IYJHA4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-54IYJHA4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-DZH76RCH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-DZH76RCH.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-HKAO3IUH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-HKAO3IUH.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-VPXFXK4K.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-VPXFXK4K.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-VPXFXK4K.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-VPXFXK4K.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ZWFCN4NQ.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ZWFCN4NQ.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ZWFCN4NQ.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ZWFCN4NQ.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-7FP4TMQR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-7FP4TMQR.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-DXCCUPVE.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-N7DTXGCB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-DXCCUPVE.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-N7DTXGCB.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ELPF6DUK.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ELPF6DUK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-HBX7U56V.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-HBX7U56V.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ILQFL64S.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ILQFL64S.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ITRGKEQZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-ITRGKEQZ.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-KIHFG273.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-K6NG4EKJ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-K6NG4EKJ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-NQZIFZ2L.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-KR3VCH5K.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-NQZIFZ2L.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-KR3VCH5K.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-RXLE57JX.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-KZE4DZCA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-RXLE57JX.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-VPLVR3DR.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-VPLVR3DR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-WK42QXZY.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-NEOUXTQ5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/chunk-WK42QXZY.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-NEOUXTQ5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_button.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_button.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_api.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_inputtext.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_inputtext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_listbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_listbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_inputtext.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_inputnumber.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_listbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_listbox.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_table.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps/primeng_table.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_common_http.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_common_http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_common_http.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_common_http.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/rxjs.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_forms.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_common.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_platform-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_platform-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_platform-browser.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_common_http.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_platform-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_platform-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_platform-server.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_platform-server.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_router.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/@angular_router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/@angular_router.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-ADVOTHP4.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-ADVOTHP4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-ADVOTHP4.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-ADVOTHP4.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-J7BU3T22.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-J7BU3T22.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-J7BU3T22.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-J7BU3T22.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-3FRL6LUC.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-BWXONERI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-3FRL6LUC.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-BWXONERI.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-5PHRVUEC.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-5IL7CLNC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-5PHRVUEC.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-5IL7CLNC.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-APDK5GVL.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-TEB2G7K2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-APDK5GVL.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-TEB2G7K2.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-FR26VYQ6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-WAOLF6IJ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-FR26VYQ6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-WAOLF6IJ.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-HPOREDVE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-HPOREDVE.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-I2XPWUSE.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-KIHFG273.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-I2XPWUSE.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-IRZD2BI2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-P5GWU64E.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-IRZD2BI2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-P5GWU64E.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-LVHOZ3MY.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-LVHOZ3MY.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-NQ4HTGF6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-NQ4HTGF6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-NQ4HTGF6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/@angular_core.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-NS5QW47J.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-NS5QW47J.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-NS5QW47J.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-NS5QW47J.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-P2TV2D4E.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-P2TV2D4E.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_inputtext.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_inputtext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_listbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_listbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/proxy.conf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-OOKWBORQ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-OOKWBORQ.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-K3AVEI7K.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-SYAXVFYL.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-SYAXVFYL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-SYAXVFYL.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-SYAXVFYL.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-U6Q2UIUH.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-VZTX2A42.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-U6Q2UIUH.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-YDN5P6SV.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-Q3R2RZWL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-YDN5P6SV.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-YJPIJG24.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/chunk-YJPIJG24.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_button.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_button.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_inputtext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_inputtext.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_inputtext.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_listbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_listbox.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_table.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/primeng_table.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/xhr2-ISERFGGE.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/xhr2-ISERFGGE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.7/frontend/vite/deps_ssr/xhr2-ISERFGGE.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/xhr2-ISERFGGE.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-7FP4TMQR.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-7FP4TMQR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-7FP4TMQR.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-7FP4TMQR.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-BISGFS4H.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-BISGFS4H.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-BISGFS4H.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-BISGFS4H.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-GSMMJKOX.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-GSMMJKOX.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-HBX7U56V.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-HBX7U56V.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-HBX7U56V.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-HBX7U56V.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ILQFL64S.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ILQFL64S.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ILQFL64S.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ILQFL64S.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ITRGKEQZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ITRGKEQZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ITRGKEQZ.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-ITRGKEQZ.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-K6NG4EKJ.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-K6NG4EKJ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-K6NG4EKJ.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-K6NG4EKJ.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-OBQN7I2V.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-OBQN7I2V.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-OBQN7I2V.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/chunk-OBQN7I2V.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_listbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_listbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_listbox.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_listbox.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps/primeng_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-55JI53J6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-55JI53J6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-55JI53J6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-55JI53J6.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-5PHRVUEC.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-5PHRVUEC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-5PHRVUEC.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-5PHRVUEC.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-HPOREDVE.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-HPOREDVE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-HPOREDVE.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-HPOREDVE.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-I2XPWUSE.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-I2XPWUSE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-I2XPWUSE.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-I2XPWUSE.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-K3AVEI7K.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-K3AVEI7K.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-LVHOZ3MY.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-LVHOZ3MY.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-LVHOZ3MY.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-LVHOZ3MY.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-OOKWBORQ.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-OOKWBORQ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-OOKWBORQ.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-OOKWBORQ.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-XFJRHLHJ.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/chunk-XFJRHLHJ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_button.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_inputtext.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_inputtext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_listbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_listbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_listbox.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_listbox.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.9/frontend/vite/deps_ssr/primeng_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/eshop/eshop.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/eshop/eshop.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/eshop/eshop.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/eshop/eshop.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/eshop/eshop.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/eshop/eshop.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/eshop/eshop.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/eshop/eshop.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/eshop/order.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/eshop/order.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/eshop/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/eshop/product.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,30 +225,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging master",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_directory_selection": "C:/Users/Augusto/Desktop/demo/src/main/java/com/example/db1",
-    "last_opened_file_path": "C:/Users/Augusto/Desktop/warehouses",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Augusto/Desktop/warehouses/Eshop/src/main/java/org/example/Main.java",
-    "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Augusto/Desktop/demo/src/main/java/com/example/db1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Augusto/Desktop/warehouses&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Augusto/Desktop/warehouses/Eshop/src/main/java/org/example/Main.java&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fe01ce2a7fbac8fafaed7c982a04e229&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -183,6 +328,8 @@
       <workItem from="1729421059226" duration="809000" />
       <workItem from="1729423488407" duration="1985000" />
       <workItem from="1729432738022" duration="1608000" />
+      <workItem from="1729453190349" duration="774000" />
+      <workItem from="1729508650601" duration="365000" />
     </task>
     <servers />
   </component>
