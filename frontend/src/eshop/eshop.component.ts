@@ -62,6 +62,7 @@ export class EshopComponent {
     id: '',
     name: '',
     category:'',
+    description:'',
     price: 0.0
   };
   formData3:Order = {
