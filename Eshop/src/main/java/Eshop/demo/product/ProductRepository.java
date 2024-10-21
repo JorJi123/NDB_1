@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface ProductRepository extends CrudRepository<Product, String> {
-
+    ArrayList<Product> findByCategory(String category);
 }
