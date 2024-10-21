@@ -3,6 +3,7 @@ package Eshop.demo.order;
 import Eshop.demo.client.Client;
 import Eshop.demo.client.ClientDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +30,7 @@ public class OrderController {
         return  orderService.getTopProducts();
     }
 
-    @GetMapping("/statistics/orders/totalValue")
+    @GetMapping("/statistics/orders/total")
     public ResponseEntity getTotalOrderCount(){
         return new ResponseEntity<>("TotalValue: " + orderService.getTotalOrderCount(), HttpStatus.OK);
     }
@@ -38,5 +39,9 @@ public class OrderController {
     public List<ClientDTO> getClientByOrderAmount(){
         return orderService.getTopClients();
     }
-    
+
+    @GetMapping("/statistics/orders/totalValue")
+    public Integer getTotalValue(){
+        return orderService.getTotalOrderValue();
+    }
 }
