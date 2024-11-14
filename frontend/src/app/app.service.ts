@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Warehouse } from "./warehouse.model";
 import { Inventory } from "./inventory.model";
+import { from } from "rxjs";
 
 @Injectable({
     providedIn:'root'
@@ -32,12 +33,16 @@ export class appService{
         return this.http.get(url);
     }
 
-    putInventory(id:string, form:Inventory){
+    putInventory(id:string, form:any){
+        const headers = new HttpHeaders({
+            'Content-Type': 'application/json'
+          })
         const body = new HttpParams
             body.set('id', form.id)
             body.set('amount', form.amount)
+            //console.log(body, f);
         const url = `http://localhost:8080/warehouse/${id}/inventory`;
-        return this.http.put(url, body);
+        return this.http.put(url, {id:form.id, amount:form.amount}, {headers: headers});
     }
     getInventoryAmount(whId:string, invId:string){
         const url = `http://localhost:8080/warehouse/${whId}/inventory/${invId}`;
@@ -60,4 +65,9 @@ export class appService{
         return this.http.post(url, body);
     }
 
+    getAllWarehouses(){
+        const url = `http://localhost:8080/warehouse/all`
+        return this.http.get(url);
+    }
+    
 }

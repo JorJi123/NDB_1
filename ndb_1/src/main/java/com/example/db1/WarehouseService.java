@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 import redis.clients.jedis.Jedis;
 
+import java.util.List;
+
 @Service
 public class WarehouseService {
     private final WarehouseRepository warehouseRepository;
@@ -31,6 +33,9 @@ public class WarehouseService {
     void deleteWarehouseById(String id){
         if(warehouseRepository.findById(id).isEmpty()) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Sandėlys tokiu ID jau užregistruotas");
         warehouseRepository.deleteById(id);
+    }
+    public Iterable<Warehouse> getAll(){
+        return warehouseRepository.findAll();
     }
 
 }

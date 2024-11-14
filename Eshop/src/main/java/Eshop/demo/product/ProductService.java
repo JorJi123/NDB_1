@@ -48,5 +48,12 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
+    public List<ProductDTO> getByCategory(String category){
+        List<ProductDTO> productDTOList = new ArrayList<>();
+        productRepository.findByCategory(category).forEach(product -> {
+            productDTOList.add(new ProductDTO(product.getId(), product.getName(), product.getPrice(), product.getCategory()));
+        });
+        return productDTOList;
+    }
 
 }

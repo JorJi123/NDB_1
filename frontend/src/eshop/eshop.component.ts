@@ -31,6 +31,14 @@ import { NgFor } from '@angular/common';
   styleUrl: './eshop.component.css'
 })
 export class EshopComponent {
+  cities: {label: string, value: string}[] = [
+    {label: 'Client', value: '/url'},
+    {label: 'Order', value: 'City2'},
+    {label: 'Product', value: 'City3'}
+  ];
+   selectedCity1: string="";
+   selectedCity2: string="";
+   
 
   availableProducts$:Observable<Product[]>;
   selectedProducts:Product[] = [];
@@ -54,6 +62,7 @@ export class EshopComponent {
     id: '',
     name: '',
     category:'',
+    description:'',
     price: 0.0
   };
   formData3:Order = {
