@@ -4,14 +4,18 @@ import Eshop.demo.client.Client;
 import Eshop.demo.client.ClientDTO;
 import Eshop.demo.client.ClientRepository;
 import Eshop.demo.product.Product;
+import Eshop.demo.product.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
+import org.springframework.data.mongodb.core.aggregation.AggregationExpression;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +30,8 @@ public class OrderService {
     private OrderRepository orderRepository;
     @Autowired
     private ClientRepository clientRepository;
+    @Autowired
+    private ProductRepository productRepository;
 
     public Order saveOrder(Order order){
         if (order.getClientId() == null || order.getItems() == null) throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid arguments");
@@ -72,4 +78,18 @@ public class OrderService {
         if(results.getMappedResults().size() < 10) return results.getMappedResults();
         else return results.getMappedResults().subList(0, 10);
     }
+
+    public Integer getTotalOrderValue(){
+        int totalValue = 0;
+        List<Order> orders = orderRepository.findAll();
+
+        for(Order order : orders){
+            for(ItemDTO item : order.getItems()){
+                totalValue += productRepository.findById(item.productId).get().getPrice() * item.quantity;
+            }
+
+        }
+        return totalValue;
+    }
+
 }

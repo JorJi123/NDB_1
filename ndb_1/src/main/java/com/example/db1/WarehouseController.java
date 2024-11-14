@@ -28,6 +28,12 @@ public class WarehouseController {
         warehouseService.deleteWarehouseById(id);
     }
 
+    @GetMapping("/warehouse/all")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public Iterable<Warehouse> getAllWarehouses(){
+        return warehouseService.getAll();
+    }
+
 }
 
 

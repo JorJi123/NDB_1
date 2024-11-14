@@ -26,7 +26,8 @@ public class ProductController {
         return new ResponseEntity<>("id: "+ product.getId(), HttpStatus.OK);
     }
     @GetMapping("/products")
-    public List<ProductDTO> getAllProducts() {
+    public List<ProductDTO> getAllProducts(@RequestParam(required = false, value = "category") String category){
+        if(category != null) return productService.getByCategory(category);
         return productService.getProducts();
     }
     @GetMapping("/products/{id}")
