@@ -41,7 +41,7 @@ public class OrderController {
     }
 
     @GetMapping("/statistics/orders/totalValue")
-    public Integer getTotalValue(){
+    public Double getTotalValue(){
         return orderService.getTotalOrderValue();
     }
 }
