@@ -50,7 +50,7 @@ public class ChannelService {
         }
         message.setTimestamp(channel.getMessages().size());
         channel.getMessages().add(message);
-        cassandraTemplate.insert(channel);
+        cassandraTemplate.update(channel);
         return message;
     }
 
