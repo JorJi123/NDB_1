@@ -79,17 +79,34 @@ public class OrderService {
         else return results.getMappedResults().subList(0, 10);
     }
 
-    public Integer getTotalOrderValue(){
-        int totalValue = 0;
-        List<Order> orders = orderRepository.findAll();
+    public Double getTotalOrderValue(){
+        Aggregation aggregation = Aggregation.newAggregation(
+                Aggregation.unwind("items"),
+                Aggregation.lookup("products", "items.productId", "_id", "productDetails"),
+                Aggregation.unwind("productDetails"),
+                Aggregation.project()
+                        .andExpression("items.quantity * productDetails.price").as("itemTotalValue"),
 
-        for(Order order : orders){
-            for(ItemDTO item : order.getItems()){
-                totalValue += productRepository.findById(item.productId).get().getPrice() * item.quantity;
-            }
+                Aggregation.group().sum("itemTotalValue").as("totalValue")
+        );
 
+        AggregationResults<TotalValueResult> result = mongoTemplate.aggregate(aggregation, "orders", TotalValueResult.class);
+
+        TotalValueResult totalValueResult = result.getUniqueMappedResult();
+
+        return totalValueResult.getTotalValue();
+    }
+    public class TotalValueResult {
+        private Double totalValue;
+
+        public Double getTotalValue() {
+            return totalValue;
         }
-        return totalValue;
+
+        public void setTotalValue(Double totalValue) {
+            this.totalValue = totalValue;
+        }
     }
 
 }
+
