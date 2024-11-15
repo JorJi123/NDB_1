@@ -2,7 +2,6 @@ package com.example.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.core.CassandraTemplate;
-import org.springframework.data.cassandra.core.cql.CqlTemplate;
 import org.springframework.data.cassandra.core.query.Columns;
 import org.springframework.data.cassandra.core.query.Criteria;
 import org.springframework.data.cassandra.core.query.Query;
@@ -13,6 +12,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ChannelService {
@@ -44,19 +44,27 @@ public class ChannelService {
     }
 
     public Message addMessage(String channelId, Message message){
-        Channel channel = channelRepository.findById(channelId).orElseThrow();
+        Channel channel = cassandraTemplate.selectOneById(channelId, Channel.class);
         if (channel.getMessages() == null) {
             channel.setMessages(new ArrayList<>());
         }
+        message.setTimestamp(channel.getMessages().size());
         channel.getMessages().add(message);
-
-        channelRepository.save(channel);
+        cassandraTemplate.insert(channel);
         return message;
     }
 
-    public List<Message> getMessages(String channelId){
-        Channel channel = channelRepository.findById(channelId).orElseThrow();
-        return channel.getMessages();
+    public List<Message> getMessages(String channelId, String author, Integer startAt){
+        Query query = Query.query(Criteria.where("id").is(channelId)).columns(Columns.from("messages"));;
+    if(startAt != null) {
+        return cassandraTemplate.selectOne(query, Channel.class).getMessages().stream()
+                .filter(message -> (author == null || author.equals(message.getAuthor())) &&
+                        (message.getTimestamp() >= startAt))
+                .collect(Collectors.toList());
+    }
+        return cassandraTemplate.selectOne(query, Channel.class).getMessages().stream()
+                .filter(message -> (author == null || author.equals(message.getAuthor())))
+                .collect(Collectors.toList());
     }
 
     public void addMembers(String channelId, String member){
