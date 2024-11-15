@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 
@@ -44,8 +45,8 @@ public class ChannelController {
         }
 
         @GetMapping("/channels/{channelId}/messages")
-        public ResponseEntity<List<Message>> GetMessages(@PathVariable("channelId") String id){
-                return ResponseEntity.status(HttpStatus.OK).body(channelService.getMessages(id));
+        public ResponseEntity<List<Message>> GetMessages(@PathVariable("channelId") String id, @RequestParam(required = false) String author, @RequestParam(required = false) Integer startAt){
+                return ResponseEntity.status(HttpStatus.OK).body(channelService.getMessages(id, author, startAt));
         }
 
         @PutMapping("channels/{channelId}/members")
@@ -56,6 +57,7 @@ public class ChannelController {
 
         @GetMapping("channels/{channelId}/members")
         public List<String> getMembers(@PathVariable("channelId") String id){
+
                 return channelService.getMembers(id);
         }
 

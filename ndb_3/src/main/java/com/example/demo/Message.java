@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.cassandra.core.mapping.UserDefinedType;
+import org.springframework.data.cassandra.core.mapping.*;
 
 import java.time.Instant;
 
@@ -19,6 +19,9 @@ public class Message {
 
     private String author;
 
-    private Instant timestamp = Instant.now();
+    private Integer timestamp;
+
+
 }
+
 
