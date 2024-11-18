@@ -21,8 +21,6 @@ public class Channel {
     private String owner;
     private String topic;
     private List<String> members = new ArrayList<>();
-    private List<Message> messages = new ArrayList<>();
-
     public void addMember(String member){
         members.add(member);
     }

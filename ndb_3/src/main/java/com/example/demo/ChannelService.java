@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -44,27 +45,38 @@ public class ChannelService {
     }
 
     public Message addMessage(String channelId, Message message){
-        Channel channel = cassandraTemplate.selectOneById(channelId, Channel.class);
-        if (channel.getMessages() == null) {
-            channel.setMessages(new ArrayList<>());
-        }
-        message.setTimestamp(channel.getMessages().size());
-        channel.getMessages().add(message);
-        cassandraTemplate.update(channel);
+
+        message.setTimestamp((int)System.currentTimeMillis());
+        message.setChannelId(channelId);
+
+        MessageByAuthor messageByAuthor = new MessageByAuthor(
+                message.getChannelId(),
+                message.getText(),
+                message.getAuthor(),
+                message.getTimestamp()
+        );
+
+        cassandraTemplate.insert(message);
+        cassandraTemplate.insert(messageByAuthor);
         return message;
     }
 
     public List<Message> getMessages(String channelId, String author, Integer startAt){
-        Query query = Query.query(Criteria.where("id").is(channelId)).columns(Columns.from("messages"));;
+        Query query = Query.query(Criteria.where("channel_id").is(channelId));
     if(startAt != null) {
-        return cassandraTemplate.selectOne(query, Channel.class).getMessages().stream()
-                .filter(message -> (author == null || author.equals(message.getAuthor())) &&
-                        (message.getTimestamp() >= startAt))
-                .collect(Collectors.toList());
+        query = query.and(Criteria.where("timestamp").gte(startAt));
     }
-        return cassandraTemplate.selectOne(query, Channel.class).getMessages().stream()
-                .filter(message -> (author == null || author.equals(message.getAuthor())))
+    if (author != null) {
+
+       query = query.and(Criteria.where("author").is(author));
+                List<Message> messagesByAuthor = cassandraTemplate.select(query, MessageByAuthor.class)
+                .stream()
+                .map(this::toMessage)
                 .collect(Collectors.toList());
+                return messagesByAuthor;
+    }
+
+        return cassandraTemplate.select(query, Message.class);
     }
 
     public void addMembers(String channelId, String member){
@@ -83,5 +95,14 @@ public class ChannelService {
         Query query = Query.query(Criteria.where("id").is(id));
         Update update = Update.empty().remove("members", member);
         cassandraTemplate.update(query, update, Channel.class);
+    }
+
+    private Message toMessage(MessageByAuthor messageByAuthor) {
+        return new Message(
+                messageByAuthor.getChannelId(),
+                messageByAuthor.getText(),
+                messageByAuthor.getAuthor(),
+                messageByAuthor.getTimestamp()
+        );
     }
 }
