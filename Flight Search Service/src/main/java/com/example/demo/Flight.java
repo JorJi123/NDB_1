@@ -22,7 +22,7 @@ public class Flight {
     @Relationship(type = "ARRIVAL", direction = Relationship.Direction.OUTGOING)
     private Airport toAirport;
     private Double price;
-    private Integer flightTimeInMinutes;
+    private Double flightTimeInMinutes;
     private String operator;
 
 }
