@@ -30,4 +30,6 @@ public interface CityRepository extends Neo4jRepository<City, String> {
                           @Param("numberOfTerminals") Integer numberOfTerminals,
                           @Param("address") String address);
 
+
+
 }
