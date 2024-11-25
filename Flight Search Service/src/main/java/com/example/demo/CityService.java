@@ -32,7 +32,7 @@ public class CityService {
     public ResponseEntity<String> saveCity(City city){
 
             cityRepository.save(city);
-            return ResponseEntity.status(HttpStatus.CREATED).body("{\n" + "name :"+ city.getName() + "\ncountry : " + city.getCountry() + "\n}");
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).body("{\n" + "name :"+ city.getName() + "\ncountry : " + city.getCountry() + "\n}");
     }
     public City getCityByName(String name){
         return cityRepository.findById(name).orElse(null);
@@ -53,24 +53,23 @@ public class CityService {
 
     public ResponseEntity<Airport> registerAirport(String cityName, Airport airport){
         cityRepository.registerAirport(cityName, airport.getCode(), airport.getName(), airport.getNumberOfTerminals(), airport.getAddress());
-        return ResponseEntity.status(HttpStatus.CREATED).body(airport);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(airport);
     }
     public CityDTO convertToDTO(City city) {
         return new CityDTO(city.getName(), city.getCountry());
     }
 
-    public List<Airport> getAllAirportsInCity(String cityName){
-
-        return cityRepository.findById(cityName).orElse(null).getAirports();
+    public List<AirportDTO> getAllAirportsInCity(String cityName){
+        return airportRepository.findAllByCity(cityName);
     }
 
-    public Airport getAirportByCode(String code){
+    public AirportDTO getAirportByCode(String code){
         return airportRepository.findByCode(code);
     }
 
     public ResponseEntity<FlightDTO> registerFlight(FlightDTO flightDto){
-     Airport toAirport = airportRepository.findByCode(flightDto.getToAirport());
-     Airport fromAirport = airportRepository.findByCode(flightDto.getFromAirport());
+     Airport toAirport = new Airport(airportRepository.findByCode(flightDto.getToAirport())) ;
+     Airport fromAirport = new Airport(airportRepository.findByCode(flightDto.getFromAirport()));
 
      Flight flight = new Flight(
              flightDto.getNumber(),
@@ -81,40 +80,24 @@ public class CityService {
              flightDto.getOperator()
      );
         flightRepository.save(flight);
-        return ResponseEntity.status(HttpStatus.CREATED).body(flightDto);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(flightDto);
 
     }
         @Transactional(readOnly = true)
         public ResponseEntity<FlightDTO> getFlightByCode(String flightCode) {
-            Flight flight = flightRepository.findByNumber(flightCode);
+            FlightDTO flight = flightRepository.findByNumber(flightCode);
 
             if (flight == null) {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
             }
 
-            FlightDTO flightDTO = new FlightDTO(
-                    flight.getNumber(),
-                    flight.getFromAirport() != null ? flight.getFromAirport().getCode() : null,
-                    flight.getToAirport() != null ? flight.getToAirport().getCode() : null,
-                    flight.getPrice(),
-                    flight.getFlightTimeInMinutes(),
-                    flight.getOperator()
-            );
 
-            return ResponseEntity.status(HttpStatus.OK).body(flightDTO);
+            return ResponseEntity.status(HttpStatus.OK).body(flight);
         }
 
-        public ResultSummary getByCities(String fromCity, String toCity){
-            String cypherQuery = """
-                           MATCH (f:Flight)-[:DEPARTURE]->(from:Airport),
-                           (f)-[:ARRIVAL]->(to:Airport)
-                           WHERE from.code ="$fromCity" AND to.code = "$toCity"
-                           RETURN f;
-                    """;
-            return neo4jClient.query(cypherQuery)
-                    .bind(fromCity).to("fromCity")
-                    .bind(toCity).to("toCity")
-                    .run();
+        @Transactional
+        public FlightFromCityDTO getByCities(String fromCity, String toCity){
+            return flightRepository.getByCities(fromCity, toCity);
         }
 
 

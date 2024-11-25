@@ -18,4 +18,11 @@ public class Airport {
     private String name;
     private Integer numberOfTerminals;
     private String address;
+
+    Airport(AirportDTO airportDTO) {
+        this.code = airportDTO.getCode();
+        this.name = airportDTO.getName();
+        this.numberOfTerminals = airportDTO.getNumberOfTerminals();
+        this.address = airportDTO.getAddress();
+    }
 }

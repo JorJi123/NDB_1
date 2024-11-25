@@ -34,13 +34,15 @@ public class    CityController {
     }
 
     @GetMapping("/cities/{name}/airports")
-    public ResponseEntity<List<Airport>>  getAllAirportsInCity(@PathVariable("name") String cityName){
+    public ResponseEntity<List<AirportDTO>>  getAllAirportsInCity(@PathVariable("name") String cityName){
         return ResponseEntity.status(HttpStatus.OK).body(cityService.getAllAirportsInCity(cityName));
     }
 
     @GetMapping("/airports/{code}")
-    public Airport getAirportByCode(@PathVariable("code") String code){
-        return cityService.getAirportByCode(code);
+    public ResponseEntity<AirportDTO> getAirportByCode(@PathVariable("code") String code){
+        AirportDTO airport = cityService.getAirportByCode(code);
+        if(airport != null) return  ResponseEntity.ok(airport);
+        else return ResponseEntity.notFound().build();
     }
     @PutMapping("/flights")
     public ResponseEntity<FlightDTO> registerFlight(@RequestBody FlightDTO flightDTO){

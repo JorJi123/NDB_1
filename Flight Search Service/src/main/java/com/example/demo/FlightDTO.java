@@ -22,6 +22,7 @@ public class FlightDTO {
     private Double price;
     private Integer flightTimeInMinutes;
     private String operator;
+    private String fromCity;
     public FlightDTO(Flight flight, Airport fromAirport, Airport toAirport) {
         this.number = flight.getNumber();
         this.fromAirport = fromAirport != null ? fromAirport.getCode() : null;
@@ -29,5 +30,6 @@ public class FlightDTO {
         this.price = flight.getPrice();
         this.flightTimeInMinutes = flight.getFlightTimeInMinutes();
         this.operator = flight.getOperator();
+        this.fromAirport = "Vilnius";
     }
 }
